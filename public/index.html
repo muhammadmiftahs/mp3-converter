@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTMP3 - Konverter YouTube ke MP3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> </head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1>YTMP3 🎵</h1>
+            <p>Konversi Video YouTube ke Audio MP3 dengan Cepat dan Mudah</p>
+        </header>
+        <main>
+            <form id="converter-form">
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="youtube-url" placeholder="Tempelkan link YouTube di sini..." autocomplete="off">
+                </div>
+                <button type="submit" id="convert-btn">
+                    <span class="btn-text">Konversi</span>
+                </button>
+            </form>
+            <div id="result" class="hidden">
+                <div class="loader hidden"></div>
+                <div id="error-message" class="hidden"></div>
+                <div id="success-message" class="hidden">
+                    <img id="video-thumbnail" src="" alt="Video Thumbnail">
+                    <h3 id="video-title">Judul Video Akan Tampil di Sini</h3>
+                    <a id="download-link" href="#" class="download-btn" download>
+                        <i class="fas fa-download"></i> Unduh MP3
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Dibuat dengan ❤️ di Depok</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
